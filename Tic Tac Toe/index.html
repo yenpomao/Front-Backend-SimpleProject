@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script src="myapp.js" defer></script>
+<body>
+    <div class="head">
+        <h1>Welcome to Tic Tac Toe</h1>
+    </div>
+
+    <div class="ui">
+      <div class="row">
+        <input type="text" id="b1" class="cell" onclick="thePowerOfClick()">
+        <input type="text" id="b2" class="cell" onclick="myfunc_4(); Iswining()">
+        <input type="text" id="b3" class="cell" onclick="myfunc_5(); Iswining()">
+      </div>
+
+      <div class="row">
+        <input type="text" id="b4" class="cell" onclick="myfunc_6(); Iswining()">
+        <input type="text" id="b5" class="cell" onclick="myfunc_7(); Iswining()">
+        <input type="text" id="b6" class="cell" onclick="myfunc_8(); Iswining()">
+      </div>
+
+      <div class="row">
+        <input type="text" id="b7" class="cell" onclick="myfunc_9(); Iswining()">
+        <input type="text" id="b8" class="cell" onclick="myfunc_10(); Iswining()">
+        <input type="text" id="b9" class="cell" onclick="myfunc_11(); Iswining()">
+      </div>
+    </div>
+    <p id="print"></p>
+    <div class="reset">
+      <button onclick="myfunc_2()">Reset</button>
+    </div>
+
+    <div class="popup" id="popscreen">
+      <form>
+        <div class="input-group">
+          <label for="name">Player Name</label>
+          <input type="text" id="name" name="name">
+        </div>
+        <div class="input-group">
+          <label for="elo">Elo</label>
+          <input type="text" id="elo" name="elo">
+        </div>
+      </form>
+      <button type="submit" onclick="addPlayer()">Start</button>
+    </div>
+      
+      
+      
+</body>
+</html>

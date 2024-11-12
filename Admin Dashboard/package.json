@@ -1,0 +1,15 @@
+{
+  "name": "admin-dashboard",
+  "version": "1.0.0",
+  "description": "A simple Admin Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "browser-sync start --server --files 'dist/css/*.css, **/*.html'"
+  },
+  "author": "Yen Po Mao",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^3.0.3"
+  }
+}

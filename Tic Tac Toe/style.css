@@ -1,0 +1,95 @@
+.head {
+  text-align: center;
+  font-weight: bold;
+}
+
+.ui {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.row {
+  display: flex;
+}
+.cell {
+  /* border: none; */
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  text-align: center;
+  cursor: pointer;
+} 
+
+.cell:active {
+  outline: none;
+}
+
+.reset {
+  text-align: center;
+  padding: 10px;
+}
+button{
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+button:hover {
+  background-color: rgb(12, 151, 12); /* Darker Green */
+  color: black; /* Black text */
+  border: 2px solid #04AA6D;
+}
+
+p {
+  text-align: center;
+  font-size: 28px;
+}
+
+form {
+  display: flex;
+  text-align: left;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  padding-right: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.popup {
+  display: flex; /* Flex for centering */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  position: fixed; /* Fixed position in the viewport */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for exact center */
+  max-width: 400px; /* Increased width */
+  padding: 20px;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it appears on top */
+  text-align: center;
+}
